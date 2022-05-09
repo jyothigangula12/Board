@@ -9,10 +9,16 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3010) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+### ` JSON Server`
+Runs the Json server. Use this command to install the server.\
+npm install Json-server 
+
+Start the JSON server by executing the following command in the board directory.\
+json-server –watch db.json 
 
 ### `npm test`
 
