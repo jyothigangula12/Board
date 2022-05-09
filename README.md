@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3010) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 ### ` JSON Server`
-Runs the Json server. 
+Runs the Json server.
 Use this command to install the server.\
 npm install Json-server 
 
