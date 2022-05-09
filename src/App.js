@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import MainBoard from "./components/MainBoard";
+import TicketDetails from "./components/TicketDetails";
+import { BoardContext } from "./context/board-context";
+const App = () => {
+  //creating state to set the context value
+  const [columns, setColumns] = useState([]);
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <BoardContext.Provider value={{ columns, setColumns }}>
+        <Routes>
+          <Route path="/" element={<Navigate to="/board" />} />
+          <Route path="/board" element={<MainBoard />} />
+          <Route path="/board/:ticketId" element={<TicketDetails />} />
+        </Routes>
+      </BoardContext.Provider>
+    </main>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,30 @@
+{
+  "tickets": [
+    {
+      "0": {
+        "name": "To-do",
+        "items": [
+          { "id": 0, "content": "First ticket" },
+          { "id": 1, "content": "Second ticket" },
+          { "id": 2, "content": "Third ticket" },
+          { "id": 3, "content": "Fourth ticket" },
+          { "id": 4, "content": "Fifth ticket" }
+        ]
+      },
+
+      "1": {
+        "name": "Just started",
+        "items": []
+      },
+
+      "3": {
+        "name": "Almost done",
+        "items": []
+      },
+      "4": {
+        "name": "Completed",
+        "items": []
+      }
+    }
+  ]
+}
